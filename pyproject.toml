@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ploid-python"
+version = "0.1.0"
+description = "Zero-dependency Python SDK for the Ploid people-data API (unofficial, built from the public OpenAPI document)"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "Harshit Gavita", email = "harshit.gavita@gmail.com" }]
+keywords = ["ploid", "people-data", "enrichment", "api", "sdk"]
+
+[tool.setuptools.packages.find]
+include = ["ploid*"]
